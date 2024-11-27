@@ -1,4 +1,6 @@
-package main.models;
+
+
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
