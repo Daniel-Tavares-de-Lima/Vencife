@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:helloworld/main.dart';
+import 'package:helloworld/telaCadastroProdutoContinua.dart';
 
 class TelaProdutoCadastro extends StatelessWidget {
   @override
@@ -109,7 +110,14 @@ class TelaProdCadastro extends StatelessWidget {
                     borderRadius: BorderRadius.circular(8),
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => TelaAdicionarProduto(),
+                    ),
+                  );
+                },
                 child: Text(
                   "Continuar",
                   style: TextStyle(
